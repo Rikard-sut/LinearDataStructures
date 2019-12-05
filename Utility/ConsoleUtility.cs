@@ -21,8 +21,8 @@ namespace Utility
             }
             return numbers;
         }
-        public static void PrintListElements<T>(IList<T> list)
-        {
+        public static void PrintListElements<T>(IList<T> list) //vill kunna skicka in en stack här tex genom att skriva ICollections<t> istället
+        {                                                      //för IList<T>. Nu måste jag convertera Stack till List. ICollections funkade inte heller.
             foreach(var element in list)
                 Console.WriteLine(element);
         }
