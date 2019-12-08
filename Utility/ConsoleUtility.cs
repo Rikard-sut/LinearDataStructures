@@ -14,7 +14,7 @@ namespace Utility
 
             while (!string.IsNullOrEmpty(input))
             {
-                T number = (T)Convert.ChangeType(input, typeof(T));
+                T number = (T)Convert.ChangeType(input, typeof(T)); //Converterar input till rätt värdetyp. (den man deklarar att man ska ha när man kallar på metoden)
                 numbers.Add(number);
 
                 input = Console.ReadLine();
@@ -26,5 +26,6 @@ namespace Utility
             foreach(var element in list)
                 Console.WriteLine(element);
         }
+        
     }
 }
