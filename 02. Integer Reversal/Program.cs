@@ -11,7 +11,7 @@ namespace _02.Integer_Reversal
         static void Main(string[] args)
         {
             var integers = ConsoleUtility.ReadSequenceOfElements<int>();
-            var stackElements = new Stack<int>(integers); //stack fylls på baklänges.
+            Stack<int> stackElements = new Stack<int>(integers); //stack fylls på baklänges.
             
             
 
